@@ -11,14 +11,12 @@ body{
 }
 
 .nav{
-    background-color: rgb(70, 7, 119);
+    background: #000000;
     display: flex;
-    border: 8px solid #1f1f1f;
     font-size: larger;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    position: static;
+    position: sticky;
    
 }
 
@@ -36,3 +34,37 @@ body{
 
 }
 
+.Hero{
+    position: static;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+    
+}
+
+.Hero::before{
+    background : url(./images/planet-6215636_1920.jpg) no-repeat center/cover;
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: -22px;
+    z-index: -1;
+    opacity: 0.8;
+
+ 
+}
+.Hero p{
+    text-align: center;
+    color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    width: 100%;
+    padding-top: 154px;
+    color: rgb(241, 145, 10);
+    text-shadow: 0 1px 0 rgba(249, 246, 246, 0.934);
+    
+
+
+}
